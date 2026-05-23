@@ -1,0 +1,65 @@
+.profile-card {
+  background: var(--lp-bg-card);
+  border-radius: var(--lp-radius);
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid var(--lp-border);
+  margin-bottom: 1rem;
+  box-shadow: var(--lp-shadow);
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 0.75rem;
+  background: var(--lp-teal);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card h2 {
+  font-size: 1.25rem;
+  color: var(--lp-navy);
+  margin-bottom: 0.25rem;
+}
+
+.profile-email {
+  font-size: 0.875rem;
+  color: var(--lp-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.profile-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: var(--lp-navy);
+}
+
+.profile-division {
+  font-size: 0.8125rem;
+  color: var(--lp-text-muted);
+  margin-top: 0.25rem;
+}
+
+.profile-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--lp-navy);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.profile-logout {
+  width: 100%;
+  margin-top: 0.5rem;
+}

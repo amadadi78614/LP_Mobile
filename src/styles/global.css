@@ -1,0 +1,257 @@
+@import './variables.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--lp-bg);
+  color: var(--lp-text);
+  line-height: 1.5;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+a {
+  color: var(--lp-teal);
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.app-shell {
+  max-width: var(--lp-max-width);
+  margin: 0 auto;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--lp-bg);
+}
+
+.app-main {
+  flex: 1;
+  padding: 1rem 1rem calc(var(--lp-nav-height) + 1rem);
+  overflow-y: auto;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--lp-navy);
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 0.875rem;
+  color: var(--lp-text-muted);
+  margin-top: -0.75rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: var(--lp-bg-card);
+  border-radius: var(--lp-radius);
+  padding: 1rem;
+  box-shadow: var(--lp-shadow);
+  border: 1px solid var(--lp-border);
+  margin-bottom: 0.75rem;
+}
+
+.card-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--lp-text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.card-value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--lp-navy);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--lp-radius-sm);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  transition: opacity 0.15s;
+}
+
+.btn:active {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--lp-green-bright), var(--lp-green));
+  color: #fff;
+  width: 100%;
+}
+
+.btn-secondary {
+  background: var(--lp-teal-light);
+  color: var(--lp-teal);
+}
+
+.btn-outline {
+  border: 1.5px solid var(--lp-border);
+  color: var(--lp-navy);
+  background: var(--lp-bg-card);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge-live {
+  background: #fdeaea;
+  color: var(--lp-live);
+}
+
+.badge-upcoming {
+  background: var(--lp-teal-light);
+  color: var(--lp-teal);
+}
+
+.badge-finished {
+  background: var(--lp-bg-muted);
+  color: var(--lp-text-muted);
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.stat-box {
+  background: var(--lp-bg-card);
+  border-radius: var(--lp-radius-sm);
+  padding: 0.875rem;
+  text-align: center;
+  border: 1px solid var(--lp-border);
+}
+
+.stat-box .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--lp-navy);
+}
+
+.stat-box .label {
+  font-size: 0.75rem;
+  color: var(--lp-text-muted);
+  margin-top: 0.15rem;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.625rem;
+  margin-top: 1rem;
+}
+
+.quick-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 1rem 0.5rem;
+  background: var(--lp-bg-card);
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius);
+  color: var(--lp-navy);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: var(--lp-shadow);
+}
+
+.quick-action .icon {
+  font-size: 1.35rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--lp-text-muted);
+}
+
+.empty-state p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.segment-control {
+  display: flex;
+  background: var(--lp-bg-muted);
+  border-radius: var(--lp-radius-sm);
+  padding: 3px;
+  margin-bottom: 1rem;
+}
+
+.segment-control button {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--lp-text-muted);
+}
+
+.segment-control button.active {
+  background: var(--lp-bg-card);
+  color: var(--lp-navy);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.section-heading {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--lp-text-muted);
+  margin-bottom: 0.5rem;
+}

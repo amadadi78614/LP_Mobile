@@ -1,0 +1,68 @@
+.standings-table-wrap {
+  background: var(--lp-bg-card);
+  border-radius: var(--lp-radius);
+  border: 1px solid var(--lp-border);
+  overflow: hidden;
+  box-shadow: var(--lp-shadow);
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+
+.standings-table th {
+  background: var(--lp-bg-muted);
+  padding: 0.625rem 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--lp-text-muted);
+  text-align: center;
+}
+
+.standings-table th:nth-child(2) {
+  text-align: left;
+  padding-left: 0.75rem;
+}
+
+.standings-table td {
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  border-top: 1px solid var(--lp-border);
+  color: var(--lp-navy);
+}
+
+.standings-table .team-cell {
+  text-align: left;
+  padding-left: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.standings-table .pos {
+  font-weight: 700;
+  color: var(--lp-text-muted);
+  width: 28px;
+}
+
+.standings-table .pts {
+  font-weight: 800;
+  color: var(--lp-teal);
+}
+
+.standings-table .win {
+  color: var(--lp-win);
+}
+
+.standings-table .loss {
+  color: var(--lp-loss);
+}
+
+.standings-table tbody tr:first-child td {
+  background: var(--lp-teal-light);
+}

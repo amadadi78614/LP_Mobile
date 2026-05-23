@@ -1,0 +1,53 @@
+.home-welcome {
+  margin-bottom: 1.25rem;
+}
+
+.welcome-label {
+  font-size: 0.8125rem;
+  color: var(--lp-text-muted);
+  margin-bottom: 0.15rem;
+}
+
+.welcome-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--lp-navy);
+  margin-bottom: 0.35rem;
+}
+
+.welcome-team {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  color: var(--lp-text-muted);
+  flex-wrap: wrap;
+}
+
+.welcome-divider {
+  opacity: 0.5;
+}
+
+.home-section {
+  margin-bottom: 1rem;
+}
+
+.section-heading {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--lp-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.home-stats-link {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.home-stats-link .card-value {
+  color: var(--lp-teal);
+  font-size: 0.9375rem;
+}

@@ -1,0 +1,14 @@
+.logo-mark-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.logo-full-img {
+  width: min(260px, 85vw);
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}

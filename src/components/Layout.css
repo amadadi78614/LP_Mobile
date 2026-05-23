@@ -1,0 +1,9 @@
+.app-main--streams {
+  padding: 0;
+  padding-bottom: calc(var(--lp-nav-height) + env(safe-area-inset-bottom, 0px));
+  background: #0b1018;
+}
+
+.app-shell--streams {
+  background: #0b1018;
+}
